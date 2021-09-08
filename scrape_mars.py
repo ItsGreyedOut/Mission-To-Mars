@@ -30,7 +30,7 @@ def scrape_info():
 
     # JPL Mars Space Images - Featured Image
     # Visit the url for the Featured Space Image site
-    url = 'https://spaceimages-mars.com'
+    url = 'https://spaceimages-mars.com/'
     browser.visit(url)
 
     # XPATH to capture 
@@ -108,5 +108,6 @@ def scrape_info():
         "hemispheres":image_urls
         }
 
+    browser.quit()
     return mars_data
 
